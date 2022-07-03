@@ -179,7 +179,7 @@ footer a {
     }
 
     .contactForm form div input {
-        width: 50vw;
+        width: 70vw;
         border-radius: 5px;
         margin: 3px 0 0 0;
         padding: 2px;
@@ -193,4 +193,12 @@ footer a {
     .contactForm h1 {
         font-size: 20px;
     }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+    }    
 }
