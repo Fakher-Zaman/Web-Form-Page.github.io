@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Data Table</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">034851</a></li>
+            <li><a href="#">Fakher Zaman</a></li>
+            <li><a href="#">BSIT</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+
+        <div class="main">
+            <h1>Student Record</h1>
+
+            <table class="edit-info">
+                <tr>
+                    <td class="edit">Name: </td>
+                    <td id="name">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Father Name: </td>
+                    <td id="father_name">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Gender: </td>
+                    <td id="identity">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Contact: </td>
+                    <td id="phone">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Email: </td>
+                    <td id="email">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Institute: </td>
+                    <td id="instituion">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Class: </td>
+                    <td id="major">NULL</td>
+                </tr>
+                <tr>
+                    <td class="edit">Semester: </td>
+                    <td id="semester">NULL</td>
+                </tr>
+            </table>
+
+            <table id="customers">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtained Marks</th>
+                </tr>
+                <tr>
+                    <td class="format">1</td>
+                    <td id="subject_name_1">...</td>
+                    <td id="subject_total_1" class="format"></td>
+                    <td id="subject_obtained_1" class="format"></td>
+                </tr>
+                <tr>
+                    <td class="format">2</td>
+                    <td id="subject_name_2">...</td>
+                    <td id="subject_total_2" class="format"></td>
+                    <td id="subject_obtained_2" class="format"></td>
+                </tr>
+                <tr>
+                    <td class="format">3</td>
+                    <td id="subject_name_3">...</td>
+                    <td id="subject_total_3" class="format"></td>
+                    <td id="subject_obtained_3" class="format"></td>
+                </tr>
+                <tr>
+                    <td class="format">4</td>
+                    <td id="subject_name_4">...</td>
+                    <td id="subject_total_4" class="format"></td>
+                    <td id="subject_obtained_4" class="format"></td>
+                </tr>
+                <tr>
+                    <td class="format">5</td>
+                    <td id="subject_name_5">...</td>
+                    <td id="subject_total_5" class="format"></td>
+                    <td id="subject_obtained_5" class="format"></td>
+                </tr>
+                <tr>
+                    <td class="format" colspan="2">Total</td>
+                    <td id="total_total" class="format"></td>
+                    <td id="total_obtained" class="format"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Author: Fakher Zaman<br>
+            <a href="https://github.com/Fakher-Zaman">https://github.com/Fakher-Zaman</a>
+        </p>
+    </footer>
+
+    <script src="table.js"></script>
+</body>
+
+</html>

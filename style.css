@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Inter&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 84vw;
+}
+
+/* For Header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(76, 150, 235);
+}
+
+.active {
+    background-color: rgb(76, 150, 235);
+}
+
+/* Login Form */
+.contactForm {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0 34px;
+    padding-top: 70px;
+}
+
+.contactForm h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(76, 150, 235);
+}
+
+.contactForm h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input {
+    width: 25vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.form-text {
+    font-size: 12px;
+    color: rgb(102, 97, 97);
+}
+
+.form-select {
+    padding: 5px 0;
+    width: 25vw;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 30px;
+    margin: 3px 0;
+}
+
+.contactForm button {
+    border-radius: 5px;
+    width: 90px;
+}
+
+/* For button */
+.buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.buttons button {
+    width: 110px;
+    padding: 7px 10px;
+    border-radius: 2px solid black;
+    color: #fff;
+    background-color: rgb(76, 150, 235);
+    font-weight: bold;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: rgb(76, 150, 235);
+    background-color: #fff;
+}
+
+/* For Error Message */
+#err_no_1 {
+    display: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#err_no_2 {
+    display: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#err_no_3 {
+    display: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#err_no_4 {
+    display: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#err_no_5 {
+    display: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.display_block {
+    display: block !important;
+}
+
+/* For footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    font-style: none;
+    color: aquamarine;
+}
+
+/* For Responsiveness */
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .contactForm form div input {
+        width: 50vw;
+        border-radius: 5px;
+        margin: 3px 0 0 0;
+        padding: 2px;
+    }
+
+    .contactForm {
+        padding: 0 24px;
+        padding-top: 40px;
+    }
+
+    .contactForm h1 {
+        font-size: 20px;
+    }
+}

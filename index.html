@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Form</title>
+</head>
+
+<body>
+    <!-- This is navBar -->
+    <header class="change">
+        <ul>
+            <li><a href="#">034851</a></li>
+            <li><a href="#">Fakher Zaman</a></li>
+            <li><a href="#">BSIT</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="main contactForm">
+            <h1>Student Form Submission</h1>
+            <h2>Personal Details</h2>
+
+            <form action="table.html" method="GET" id="submission">
+
+                <div id="outer_div_form">
+                    <div id="personal_info_div">
+                        <label for="name">What's your name? </label><br>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="fname">What's your father name?</label><br>
+                        <input type="text" id="father_name" name="father_name"><br><br>
+                        <label for="identity">Enter your Gender:</label><br>
+                        <input type="text" id="identity" name="identity"><br><br>
+                        <label for="contact">Enter your contact number:</label><br>
+                        <input type="text" id="phone" name="phone"><br><br>
+                        <label for="email">Enter your email:</label><br>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="institute">Enter your institute name:</label><br>
+                        <input type="text" id="instituion" name="instituion"><br><br>
+                        <label for="c-name">Enter your class name:</label><br>
+                        <input type="text" id="major" name="major"><br><br>
+                        <label for="semester">Enter your semester:</label><br>
+                        <input type="text" id="semester" name="semester"><br><br>
+                    </div>
+
+                    <div id="result_info_div">
+                        <div>
+                            <h2>Course Details</h2>
+                        </div>
+
+                        <div>
+                            <div id="err_no_1">
+                                <p>Error! Obtained marks is greater than Total marks.</p>
+                            </div>
+
+                            <label for="lname">For Subject 1:</label><br>
+                            <input required type="text" name="1_name" placeholder="Subject Name" id="1_name"><br><br>
+                            <input type="text" data-id="1" onkeyup="validation(this)" name="1_total" id="1_total"
+                                placeholder="Subject Total Marks..."><br><br>
+                            <input type="text" data-id="1" onkeyup="validation(this)" name="1_obtained" id="1_obtained"
+                                placeholder="Subject Obtained Marks..."><br><br>
+                        </div>
+
+                        <div>
+                            <div id="err_no_2">
+                                <p>Error! Obtained marks is greater than Total marks.</p>
+                            </div>
+                            <label for="lname">For Subject 2:</label><br>
+                            <input type="text" name="2_name" placeholder="Subject Name" id="2_name"><br><br>
+                            <input type="text" data-id="2" onkeyup="validation(this)" name="2_total" id="2_total"
+                                placeholder="Subject Total Marks"><br><br>
+                            <input type="text" data-id="2" onkeyup="validation(this)" name="2_obtained" id="2_obtained"
+                                placeholder="Subject Obtained Marks"><br><br>
+                        </div>
+
+                        <div>
+                            <div id="err_no_3">
+                                <p>Error! Obtained marks is greater than Total marks.</p>
+                            </div>
+                            <label for="lname">For Subject 3:</label><br>
+                            <input type="text" name="3_name" placeholder="Subject Name" id="3_name"><br><br>
+                            <input type="text" data-id="3" onkeyup="validation(this)" name="3_total" id="3_total"
+                                placeholder="Subject Total Marks"><br><br>
+                            <input type="text" data-id="3" onkeyup="validation(this)" name="3_obtained" id="3_obtained"
+                                placeholder="Subject Obtained Marks"><br><br>
+                        </div>
+
+                        <div>
+                            <div id="err_no_4">
+                                <p>Error! Obtained marks is greater than Total marks.</p>
+                            </div>
+                            <label for="lname">For Subject 4:</label><br>
+                            <input type="text" name="4_name" placeholder="Subject Name" id="4_name"><br><br>
+                            <input type="text" data-id="4" onkeyup="validation(this)" name="4_total" id="4_total"
+                                placeholder="Subject Total Marks"><br><br>
+                            <input type="text" data-id="4" onkeyup="validation(this)" name="4_obtained" id="4_obtained"
+                                placeholder="Subject Obtained Marks"><br><br>
+                        </div>
+
+                        <div>
+                            <div id="err_no_5">
+                                <p>Error! Obtained marks is greater than Total marks.</p>
+                            </div>
+                            <label for="lname">For Subject 5:</label><br>
+                            <input type="text" name="5_name" placeholder="Subject Name" id="5_name"><br><br>
+                            <input type="text" data-id="5" onkeyup="validation(this)" name="5_total" id="5_total"
+                                placeholder="Subject Total Marks"><br><br>
+                            <input type="text" data-id="5" onkeyup="validation(this)" name="5_obtained" id="5_obtained"
+                                placeholder="Subject Obtained Marks"><br><br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mb-3" id="form-check">
+                    <input type="checkbox" class="form-check-input" id="isclient">
+                    <label class="form-check-label" for="isclient">Verify, You are a Student.</label>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="submit_button" onclick="beforeSubmit()">Submit</button>
+                </div>
+                <!-- <input  type="submit" value="Submit"> -->
+            </form>
+        </div>
+    </div>
+    <footer class="change">
+        <p>Author: Fakher Zaman<br>
+            <a href="https://github.com/Fakher-Zaman">https://github.com/Fakher-Zaman</a>
+        </p>
+    </footer>
+
+    <script src="form.js"></script>
+    <script src="validation.js"></script>
+</body>
+
+</html>

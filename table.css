@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.container,
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    width: 50vw;
+}
+
+.main h1 {
+    margin: auto;
+    padding: 20px;
+}
+
+/* For header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(76, 150, 235);
+}
+
+.active {
+    background-color: rgb(76, 150, 235);
+}
+
+/* For User Info */
+.edit-info {
+    font-size: 22px;
+}
+
+.edit {
+    font-weight: bold;
+}
+
+/* For Table Data */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(76, 150, 235);
+    color: white;
+}
+
+.format {
+    text-align: center;
+}
+
+/* For footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    font-style: none;
+    color: aquamarine;
+}
+
+/* For Responsiveness */
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 100vw;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .container,
+    h1 {
+        display: flex;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .main h1 {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .edit-info {
+        font-size: 18px;
+    }
+}
